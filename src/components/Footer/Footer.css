@@ -1,6 +1,11 @@
 .footer-container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-container-left {
+    display: flex;
 }
 
 .footer-logo-container {
@@ -9,12 +14,61 @@
 
 .footer-logo {
   font-size: 18px !important;
-  font-weight: bold !important;
+  font-weight: bold !important; 
+}
+
+.footer-logo:hover {
+    color: #bb86fc !important;
+}
+
+.rule {
+    margin: 0 10px;
+    border-right: 2px solid gray;
 }
 
 .footer-right {
     transform: rotate(180deg);
     position: relative;
-    top: -13px;
     left: -2px;
+}
+
+.content p {
+    margin-bottom: 0;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+.linkedin-icon {
+    border-radius: 2px;
+    color: white;
+    background-color: gray;
+    padding: 1px 3px ;
+    font-size: 16px;
+}
+
+.linkedin-icon:hover {
+    background-color: #bb86fc;
+}
+
+.envelope {
+    font-size: 20px;
+    color: gray;
+    position: relative;
+    bottom: -1px;
+}
+
+.envelope:hover {
+    color: #bb86fc;
+}
+
+.github-icon {
+    font-size: 22px;
+    color: gray;
+}
+
+.github-icon:hover {
+    color: #bb86fc;
 }
