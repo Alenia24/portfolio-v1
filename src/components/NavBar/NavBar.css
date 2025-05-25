@@ -1,0 +1,37 @@
+.logo-container {
+    display: flex;
+    position: sticky;
+}
+
+.logo {
+    font-size: 25px !important;
+    font-weight: bold !important;
+}
+
+.logo:hover {
+    color: #bb86fc !important;
+}
+
+.right {
+    transform: rotate(180deg);
+    position: relative;
+    bottom: -3px;
+    left: -3px;
+}
+
+.nav-links a {
+    color: black !important;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #bb86fc !important;
+}
+
+.navbar-toggler {
+    border: 2px solid black !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2030%2030'%3E%3Cpath%20stroke='%23E0E0E0'%20stroke-linecap='round'%20stroke-miterlimit='10'%20stroke-width='2'%20d='M4%207h22M4%2015h22M4%2023h22'/%3E%3C/svg%3E") !important;
+}
