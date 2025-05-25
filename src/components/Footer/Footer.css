@@ -1,0 +1,20 @@
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo-container {
+  display: flex;
+}
+
+.footer-logo {
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+.footer-right {
+    transform: rotate(180deg);
+    position: relative;
+    top: -13px;
+    left: -2px;
+}

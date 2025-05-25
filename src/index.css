@@ -8,3 +8,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* html, body, :root {
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+} */
