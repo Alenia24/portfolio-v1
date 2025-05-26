@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Footer from "../../components/Footer/Footer.jsx";
 import NavBar from "../../components/NavBar/NavBar.jsx";
 
-import photo from "../../../public/me.png";
+import photo from "../../assets/me.png";
 import "./Homepage.css";
 
 export default function Homepage() {
