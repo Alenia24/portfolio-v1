@@ -1,0 +1,76 @@
+.about-container { 
+    max-width: 800px;
+    display: block;
+    margin: 50px auto 200px;
+}
+
+.about-title {
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.about p {
+    font-size: 18px;
+}
+
+.quote {
+    margin: 0;
+}
+
+.author {
+    color: #bb86fc;
+    font-weight: bold;
+}
+
+.skill-section {
+    margin: 120px 0 80px;
+    display: flex; 
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.section-tabs {
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.section-tabs button {
+    background-color: #bb86fc;
+    padding: 10px 20px;
+    width: 200px;
+    border: 2px solid #a560fa;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.education-container div {
+    margin-bottom: 30px;
+    border-left: 2px solid rgba(187, 134, 252, 0.5);
+    padding-left: 30px;
+}
+
+.education-container h4 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.date {
+    margin: 0;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        margin: 30px 50px;
+    }
+}
