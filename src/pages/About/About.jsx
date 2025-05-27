@@ -7,8 +7,18 @@ import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
-import git from "../../assets/git2.png";
-
+import git from "../../assets/git.svg";
+import html from "../../assets/html.png"
+import css from "../../assets/css.png";
+import js from "../../assets/js.png";
+import ts from "../../assets/typescript.png";
+import react from "../../assets/reactlogo.png";
+import tailwind from "../../assets/tailwind.svg";
+import github from "../../assets/github.png";
+import reactrouters from "../../assets/react-router.svg";
+import bootstrap from "../../assets/bootstrap.png";
+import express from "../../assets/express.png";
+import node from "../../assets/node.png";
 
 import "./About.css";
 
@@ -51,19 +61,19 @@ export default function About() {
           <div className="section-tabs">
             <button
               onClick={() => setSelectedSection("education")}
-              className="tab"
+              className={selectedSection === "education" ? "selected" : ""}
             >
               Education
             </button>
             <button
               onClick={() => setSelectedSection("skills")}
-              className="tab"
+              className={selectedSection === "skills" ? "selected" : ""}
             >
               Toolkit
             </button>
             <button
               onClick={() => setSelectedSection("experience")}
-              className="tab"
+              className={selectedSection === "experience" ? "selected" : ""}
             >
               Experience
             </button>
@@ -93,8 +103,18 @@ export default function About() {
               <div className="skills-container">
                 <h3 className="section-title">Toolkit <FontAwesomeIcon icon={faScrewdriverWrench}/></h3>
                 <div className="skills">
-                  <div className="skill"><img src={git} alt="" /></div>
-                  <div></div>
+                  <div className="skill"><img src={html} alt="" width={60} height={60}/><div className="tooltip">HTML</div></div>
+                  <div className="skill"><img src={css} alt="" width={60} height={60}/><div className="tooltip">CSS</div></div>
+                  <div className="skill"><img src={bootstrap} alt="" width={60} height={60}/><div className="tooltip">Bootstrap</div></div>
+                  <div className="skill"><img src={tailwind} alt="" width={60} height={60}/><div className="tooltip">Tailwind CSS</div></div>
+                  <div className="skill"><img src={js} alt="" width={60} height={60}/><div className="tooltip">JavaScript</div></div>
+                  <div className="skill"><img src={ts} alt="" width={60} height={60}/><div className="tooltip">TypeScript</div></div>
+                  <div className="skill"><img src={react} alt="" width={60} height={60}/><div className="tooltip">React</div></div>
+                  <div className="skill"><img src={reactrouters} alt="" width={60} height={60}/><div className="tooltip">React Routers</div></div>
+                  <div className="skill"><img src={node} alt="" width={60} height={60}/><div className="tooltip">Node</div></div>
+                  <div className="skill"><img src={express} alt="" width={60} height={60}/><div className="tooltip">Express</div></div>
+                  <div className="skill"><img src={git} alt="" width={60} height={60}/><div className="tooltip">Git</div></div>
+                  <div className="skill"><img src={github} alt="" width={60} height={60}/><div className="tooltip">Github</div></div>
                 </div>
               </div>
             )}

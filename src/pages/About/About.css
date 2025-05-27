@@ -45,6 +45,16 @@
     border: 2px solid #a560fa;
     border-radius: 6px;
     font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);;
+}
+
+.section-tabs button:hover {
+    background-color: white;
+    color: #bb86fc;
+}
+
+.section-tabs button.selected {
+    background-color: #a560fa;
 }
 
 .section-title {
@@ -69,8 +79,87 @@
     opacity: 0.8;
 }
 
+.skills {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.skill {
+    border: 2px solid #bb86fc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: inline-block;
+}
+
+.skills:hover div {
+    opacity: 0.3;
+}
+
+.skills div:hover {
+    opacity: 1;
+}
+
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: max-content;
+    background-color: #bb86fc;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.skill:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
 @media (max-width: 768px) {
     .about-container {
         margin: 30px 50px;
+    }
+
+    .skill-section {
+        flex-direction: column;
+        gap: 30px;
+        margin: 90px 0;
+    }
+
+    .section-tabs {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .section-tabs button {
+        width: fit-content;
+    }
+
+    .skills {
+        justify-content: center;
+    }
+
+    .skill {
+        padding: 10px;
+    }
+
+    .section-title {
+        padding-left: 20px;
+        text-align: center;
     }
 }
