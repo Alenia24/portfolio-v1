@@ -1,165 +1,167 @@
-.about-container { 
-    max-width: 800px;
-    display: block;
-    margin: 50px auto 200px;
+.about-container {
+  max-width: 800px;
+  display: block;
+  margin: 50px auto 200px;
 }
 
 .about-title {
-    font-weight: bold;
-    margin-bottom: 50px;
+  font-weight: bold;
+  margin-bottom: 50px;
 }
 
 .about p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .quote {
-    margin: 0;
+  margin: 0;
 }
 
 .author {
-    color: #bb86fc;
-    font-weight: bold;
+  color: #bb86fc;
+  font-weight: bold;
 }
 
 .skill-section {
-    margin: 120px 0 80px;
-    display: flex; 
-    justify-content: space-between;
-    gap: 30px;
+  margin: 120px 0 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .section-tabs {
-    max-width: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .section-tabs button {
-    background-color: #bb86fc;
-    padding: 10px 20px;
-    width: 200px;
-    border: 2px solid #a560fa;
-    border-radius: 6px;
-    font-weight: bold;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);;
+  background-color: #bb86fc;
+  padding: 10px 20px;
+  width: 200px;
+  border: 2px solid #a560fa;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .section-tabs button:hover {
-    background-color: white;
-    color: #bb86fc;
+  background-color: white;
+  color: #bb86fc;
 }
 
 .section-tabs button.selected {
-    background-color: #a560fa;
+  background-color: #a560fa;
+  color: white;
 }
 
 .section-title {
-    font-weight: bold;
-    font-size: 40px;
-    margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 15px;
 }
 
 .education-container div {
-    margin-bottom: 30px;
-    border-left: 2px solid rgba(187, 134, 252, 0.5);
-    padding-left: 30px;
+  margin-bottom: 30px;
+  border-left: 2px solid rgba(187, 134, 252, 0.5);
+  padding-left: 30px;
 }
 
 .education-container h4 {
-    font-weight: bold;
-    margin-bottom: 0;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
 .date {
-    margin: 0;
-    opacity: 0.8;
+  margin: 0;
+  opacity: 0.8;
 }
 
 .skills {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .skill {
-    border: 2px solid #bb86fc;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    position: relative;
-    display: inline-block;
+  border: 2px solid #bb86fc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: inline-block;
 }
 
 .skills:hover div {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .skills div:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .tooltip {
-    visibility: hidden;
-    opacity: 0;
-    width: max-content;
-    background-color: #bb86fc;
-    color: white;
-    font-weight: 700;
-    text-align: center;
-    position: absolute;
-    bottom: 110%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 6px 8px;
-    border-radius: 4px;
-    font-size: 12px;
-    transition: opacity 0.3s ease;
-    z-index: 10;
-    pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: #bb86fc;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+  pointer-events: none;
 }
 
 .skill:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
-    .about-container {
-        margin: 30px 50px;
-    }
+  .about-container {
+    margin: 30px 50px;
+  }
 
-    .skill-section {
-        flex-direction: column;
-        gap: 30px;
-        margin: 90px 0;
-    }
+  .skill-section {
+    flex-direction: column;
+    gap: 30px;
+    margin: 90px 0;
+  }
 
-    .section-tabs {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
+  .section-tabs {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+  }
 
-    .section-tabs button {
-        width: fit-content;
-    }
+  .section-tabs button {
+    width: fit-content;
+    padding: 10px 15px;
+  }
 
-    .skills {
-        justify-content: center;
-    }
+  .skills {
+    justify-content: center;
+  }
 
-    .skill {
-        padding: 10px;
-    }
+  .skill {
+    padding: 10px;
+  }
 
-    .section-title {
-        padding-left: 20px;
-        text-align: center;
-    }
+  .section-title {
+    padding-left: 20px;
+    text-align: center;
+  }
 }
