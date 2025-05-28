@@ -11,7 +11,7 @@ import "./Projects.css";
 
 export default function Projects() {
   return (
-    <div>
+    <div className="projectspage">
       <NavBar />
       <div className="projects-container">
         <div className="projects-intro">
