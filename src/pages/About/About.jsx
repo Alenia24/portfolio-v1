@@ -26,7 +26,7 @@ export default function About() {
   const [selectedSection, setSelectedSection] = useState("education");
 
   return (
-    <div>
+    <div className="aboutpage">
       <NavBar />
       <div className="about-container">
         <div className="about">
