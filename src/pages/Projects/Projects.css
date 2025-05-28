@@ -1,0 +1,33 @@
+.projects-container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto 200px;
+}
+
+.projects-intro {
+    max-width: 800px;
+    margin-bottom: 50px;
+}
+
+.projects-title {
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 20px;
+    max-width: 1000px;
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        margin: 0 30px;
+    }
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
