@@ -70,4 +70,14 @@
     .project-info {
         height: fit-content;
     }
+
+    .project-links {
+      justify-content: flex-start;
+    }
+
+    .project-link {
+      width: fit-content;
+      padding: 2px 8px;
+      font-weight: bold;
+    }
 }
