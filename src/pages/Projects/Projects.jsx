@@ -18,10 +18,10 @@ export default function Projects() {
           <h1 className="projects-title">Projects</h1>
           <p>
             Here's a bunch of projects that I've worked on recently, while
-            learning, experimenting and solving real world problems. Some started
-            as personal challenges and coursework. I've woked with tools like
-            React, Node.js and different CSS methodologies to bring ideas to
-            life. From clean user interfaces to full stack applications. Each
+            learning, experimenting and solving real world problems. Some
+            started as personal challenges and coursework. I've woked with tools
+            like React, Node.js and different CSS methodologies to bring ideas
+            to life. From clean user interfaces to full stack applications. Each
             project taught me something new. I am always looking to build
             better, smarter and more user-friendly experiences.
           </p>
@@ -74,7 +74,7 @@ export default function Projects() {
             image={dog}
             description="A simple pet resue web app that allows users to search for dogs by breeds
             and view all dog breeds using data from the Dog API. "
-            liveLink="https://numbers-guess-gamee.netlify.app/"
+            liveLink="https://rad-frangipane-97b1ca.netlify.app/"
             githubLink="https://github.com/Alenia24/SBA308A"
             projectTools={["Html", "CSS", "JavaScript", "API"]}
           />
