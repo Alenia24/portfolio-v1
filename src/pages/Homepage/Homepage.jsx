@@ -9,7 +9,7 @@ import "./Homepage.css";
 export default function Homepage() {
   const nav = useNavigate();
   return (
-    <div>
+    <div className="homepage">
       <NavBar />
       <div className="title-container">
         <div className="title-heading">
