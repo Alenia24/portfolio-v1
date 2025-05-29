@@ -3,3 +3,8 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+.contact-container {
+  display: block;
+  margin: 0 auto;
+}
