@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 
 // Import browser router
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
