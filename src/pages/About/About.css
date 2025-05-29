@@ -70,13 +70,13 @@
   margin-bottom: 15px;
 }
 
-.education-container div {
+.education-container div, .experience-container div {
   margin-bottom: 30px;
   border-left: 2px solid rgba(187, 134, 252, 0.5);
   padding-left: 30px;
 }
 
-.education-container h4 {
+.education-container h4, .experience-container h4 {
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -133,6 +133,10 @@
 .skill:hover .tooltip {
   visibility: visible;
   opacity: 1;
+}
+
+.location {
+  margin: 0;
 }
 
 @media (max-width: 768px) {

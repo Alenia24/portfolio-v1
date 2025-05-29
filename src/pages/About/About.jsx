@@ -122,7 +122,15 @@ export default function About() {
             {selectedSection === "experience" && (
               <div className="experience-container">
                 <h3 className="section-title">Experience <FontAwesomeIcon icon={faBriefcase}/></h3>
-                <p></p>
+                <div>
+                  <p className="date">September 2024 - Present</p>
+                  <p className="location">Remote</p>
+                  <h4>Freelance Web Developer</h4>
+                  <p className="job-description">Developed custom websites for clients accross various industries. Skilled in front-end and back-end development.
+                    Developed responsive, secure, and SEO friendly solutions. Experiencied in API integration, cloud deployment and 
+                    client collaboration from concept to launch.
+                  </p>
+                </div>                
               </div>
             )}
           </div>
