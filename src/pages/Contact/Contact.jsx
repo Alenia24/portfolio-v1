@@ -6,6 +6,9 @@ export default function Contact() {
   return (
     <div className="contactpage">
       <NavBar/>
+      <div className="contact-container">
+        <h1 className="contact-title">Contact</h1>
+      </div>
       <Footer/>
     </div>
   )
