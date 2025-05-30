@@ -9,6 +9,11 @@ export default function Contact() {
       <NavBar/>
       <div className="contact-container">
         <h1 className="contact-title">Contact</h1>
+        <h3>Let's Connect</h3>
+        <p>I'm open to freelance work, job opportunities, and creative collaborations.
+          If you have something in mind or just want to say hello, drop a message below.
+          I would love to hear from you.
+        </p>
         <ContactForm />
       </div>
       <Footer/>

@@ -10,14 +10,20 @@
 label {
     font-weight: bold;
     color: #bb86fc;
+    margin-bottom: 5px;
 }
 
-input, textarea {
+input[type='text'], input[type='email'], textarea {
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 4px;
-    padding: 3px 3px ;
+    padding: 3px 5px ;
     color: black;
+    margin-bottom: 15px;
+}
+
+input[type='text'], input[type='email'] { 
+    max-width: 300px;
 }
 
 input::placeholder, textarea::placeholder {
