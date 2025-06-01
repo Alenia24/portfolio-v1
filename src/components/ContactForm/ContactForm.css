@@ -1,10 +1,11 @@
 .contact-form-container {
-    max-width: 500px;
+    width: 500px;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
+    
 }
 
 label {
@@ -17,13 +18,17 @@ input[type='text'], input[type='email'], textarea {
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 4px;
-    padding: 3px 5px ;
+    padding: 5px 10px ;
     color: black;
     margin-bottom: 15px;
 }
 
 input[type='text'], input[type='email'] { 
     max-width: 300px;
+}
+
+textarea {
+    max-width: 400px;
 }
 
 input::placeholder, textarea::placeholder {
