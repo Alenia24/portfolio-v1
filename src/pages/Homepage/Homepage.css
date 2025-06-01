@@ -64,18 +64,61 @@
 
 .learn-more-btn:hover {
   transform: translateY(2px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.homepage-projects-container {
+
+.homepage-about-skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.homepage-skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border: 1px solid #bb86fc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 5px 10px 5px 0;
+  background-color: #bb86fc;
+  color: white;
+  transition: 0.1s all ease ;
+}
+
+.homepage-skill:hover {
+  border: 1px solid #bb86fc;
+  background-color: white;
+  color: #bb86fc;
+}
+
+.homepage-skill img {
+  margin-right: 10px;
+  display: block;
+}
+
+.view-about-me-btn {
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 1px solid #bb86fc;
+  border-radius: 10px;
+  background-color: #bb86fc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: 0.1s all ease ;
+  display: block;
+  margin: 30px auto 0;
+}
+
+.homepage-projects-container, .homepage-about-container {
   display: block;
   margin: 60px auto;
   max-width: 1000px;
 }
 
-.homepage-projects-title {
+.homepage-projects-title, .homepage-about-title {
   font-weight: bold;
-  margin-bottom: 30px;
+  margin: 10px auto 30px;
 }
 
 
@@ -98,14 +141,10 @@
 
 }
 
-.view-all-projects-btn:hover {
+.view-all-projects-btn:hover, .view-about-me-btn:hover {
   background-color: #a560fa;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);;
 }
-
-
-
-
 
 @keyframes typing {
   /*To start with no visible text*/
@@ -139,7 +178,7 @@
     max-width: 250px;
   }
 
-  .homepage-projects-container {
+  .homepage-projects-container, .homepage-about-container {
     margin: 50px 30px;
   }
 
