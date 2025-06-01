@@ -166,12 +166,24 @@
     justify-content: center;
   }
 
-  .skill {
-    padding: 10px;
+  .skill img {
+    width: 50px !important;
+    height: 50px !important;
   }
 
   .section-title {
     padding-left: 20px;
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .skill {
+    padding: 10px;
   }
 }
