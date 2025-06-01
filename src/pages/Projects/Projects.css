@@ -13,7 +13,7 @@
 }
 
 .projects-intro {
-  max-width: 800px;
+  max-width: 1000px;
   margin-bottom: 50px;
 }
 
@@ -31,7 +31,7 @@
 
 @media (max-width: 768px) {
   .projects-container {
-    margin: 0 30px;
+    margin: 50px 30px;
   }
   .projects {
     grid-template-columns: 1fr;
