@@ -72,3 +72,26 @@
 .github-icon:hover {
     color: #bb86fc;
 }
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    .footer-container-left {
+        flex-direction: column;
+    }
+
+    .footer-logo-container {
+        justify-content: center;
+    }
+
+    .rule {
+        border: none;
+        margin: 0;
+    }
+}
+
