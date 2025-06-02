@@ -22,6 +22,8 @@ import node from "../../assets/brandLogos/node.png";
 import solara from "../../assets/projectimages/solara.png";
 import weather from "../../assets/projectimages/weather.png";
 
+import resume from "../../assets/files/AleniaAllenResume2025.pdf";
+
 import photo from "../../assets/me.png";
 import "./Homepage.css";
 
@@ -40,14 +42,9 @@ export default function Homepage() {
             Hello, I'm <br /> <span className="highlight"> Alenia!</span>
           </h1>
           <p>I'm a Software Engineer focused on full stack web development. </p>
-          <button
-            className="learn-more-btn"
-            onClick={() => {
-              nav("/about");
-            }}
-          >
-            Learn more about me
-          </button>
+          <a href={resume} download="AleniaAllenResume2025">
+            <button className="learn-more-btn" >Download Resume</button>
+          </a>
         </div>
         <div className="title-image">
           <img
