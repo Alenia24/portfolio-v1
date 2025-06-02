@@ -1,5 +1,3 @@
-import { Helmet } from "react-helmet";
-
 import ContactForm from "../../components/ContactForm/ContactForm.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 import NavBar from "../../components/NavBar/NavBar.jsx";
@@ -13,10 +11,6 @@ import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 export default function Contact() {
   return (
     <div className="contactpage">
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Contact | Alenia Allen</title>
-      </Helmet>
       <NavBar />
       <div className="contact-container">
         <h1 className="contact-title">Let's Connect</h1>

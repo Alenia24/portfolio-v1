@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet";
 
 import Footer from "../../components/Footer/Footer.jsx";
 import NavBar from "../../components/NavBar/NavBar.jsx";
@@ -29,10 +28,6 @@ export default function About() {
 
   return (
     <div className="aboutpage">
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>About | Alenia Allen</title>
-      </Helmet>
       <NavBar />
       <div className="about-container">
         <div className="about">

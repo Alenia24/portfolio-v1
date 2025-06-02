@@ -1,5 +1,3 @@
-import { Helmet } from "react-helmet";
-
 import Footer from "../../components/Footer/Footer.jsx";
 import NavBar from "../../components/NavBar/NavBar.jsx";
 import ProjectItem from "../../components/ProjectItem/ProjectItem.jsx";
@@ -14,10 +12,6 @@ import "./Projects.css";
 export default function Projects() {
   return (
     <div className="projectspage">
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Projects | Alenia Allen</title>
-      </Helmet>
       <NavBar />
       <div className="projects-container">
         <div className="projects-intro">
