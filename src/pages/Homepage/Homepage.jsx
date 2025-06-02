@@ -30,7 +30,7 @@ export default function Homepage() {
     <div className="homepage">
       <Helmet>
         <meta charSet="utf-8"/>
-        <title>Alenia Allen</title>
+        <title>Alenia Allen | Full Stack Developer</title>
       </Helmet>
       <NavBar />
       <div className="title-container">
