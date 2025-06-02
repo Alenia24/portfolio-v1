@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Footer from "../../components/Footer/Footer.jsx";
 import NavBar from "../../components/NavBar/NavBar.jsx";
@@ -25,6 +25,10 @@ import "./About.css";
 
 export default function About() {
   const [selectedSection, setSelectedSection] = useState("education");
+
+  useEffect(() => {
+    document.title = "About | Alenia Allen"
+  })
 
   return (
     <div className="aboutpage">

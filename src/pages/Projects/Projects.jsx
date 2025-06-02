@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import Footer from "../../components/Footer/Footer.jsx";
 import NavBar from "../../components/NavBar/NavBar.jsx";
 import ProjectItem from "../../components/ProjectItem/ProjectItem.jsx";
@@ -10,6 +12,9 @@ import weather from "../../assets/projectimages/weather.png";
 import "./Projects.css";
 
 export default function Projects() {
+  useEffect(() => {
+    document.title = "Projects | Alenia Allen";
+  });
   return (
     <div className="projectspage">
       <NavBar />

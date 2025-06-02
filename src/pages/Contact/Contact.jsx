@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import ContactForm from "../../components/ContactForm/ContactForm.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 import NavBar from "../../components/NavBar/NavBar.jsx";
@@ -9,6 +11,10 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
 export default function Contact() {
+  useEffect(() => {
+    document.title = "Contact | Alenia Allen";
+  });
+
   return (
     <div className="contactpage">
       <NavBar />

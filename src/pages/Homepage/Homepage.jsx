@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import Footer from "../../components/Footer/Footer.jsx";
@@ -26,6 +27,10 @@ import "./Homepage.css";
 
 export default function Homepage() {
   const nav = useNavigate();
+
+  useEffect(() => {
+    document.title = "Alenia Allen";
+  });
   return (
     <div className="homepage">
       <NavBar />
