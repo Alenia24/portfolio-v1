@@ -9,18 +9,18 @@ import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
-import git from "../../assets/git.svg";
-import html from "../../assets/html.png"
-import css from "../../assets/css.png";
-import js from "../../assets/js.png";
-import ts from "../../assets/typescript.png";
-import react from "../../assets/reactlogo.png";
-import tailwind from "../../assets/tailwind.svg";
-import github from "../../assets/github.png";
-import reactrouters from "../../assets/react-router.svg";
-import bootstrap from "../../assets/bootstrap.png";
-import express from "../../assets/express.png";
-import node from "../../assets/node.png";
+import git from "../../assets/brandLogos/git.svg";
+import html from "../../assets/brandLogos/html.png"
+import css from "../../assets/brandLogos/css.png";
+import js from "../../assets/brandLogos/js.png";
+import ts from "../../assets/brandLogos/typescript.png";
+import react from "../../assets/brandLogos/reactlogo.png";
+import tailwind from "../../assets/brandLogos/tailwind.svg";
+import github from "../../assets/brandLogos/github.png";
+import reactrouters from "../../assets/brandLogos/react-router.svg";
+import bootstrap from "../../assets/brandLogos/bootstrap.png";
+import express from "../../assets/brandLogos/express.png";
+import node from "../../assets/brandLogos/node.png";
 
 import "./About.css";
 
