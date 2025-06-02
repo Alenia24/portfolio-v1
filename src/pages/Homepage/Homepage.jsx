@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import Footer from "../../components/Footer/Footer.jsx";
 import NavBar from "../../components/NavBar/NavBar.jsx";
@@ -27,6 +28,10 @@ export default function Homepage() {
   const nav = useNavigate();
   return (
     <div className="homepage">
+      <Helmet>
+        <meta charSet="utf-8"/>
+        <title>Alenia Allen</title>
+      </Helmet>
       <NavBar />
       <div className="title-container">
         <div className="title-heading">

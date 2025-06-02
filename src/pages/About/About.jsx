@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
+
 import Footer from "../../components/Footer/Footer.jsx";
 import NavBar from "../../components/NavBar/NavBar.jsx";
 
@@ -27,6 +29,10 @@ export default function About() {
 
   return (
     <div className="aboutpage">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>About | Alenia Allen</title>
+      </Helmet>
       <NavBar />
       <div className="about-container">
         <div className="about">
@@ -82,7 +88,9 @@ export default function About() {
           <div className="tab-content">
             {selectedSection === "education" && (
               <div className="education-container">
-                <h3 className="section-title">Education <FontAwesomeIcon icon={faGraduationCap}/></h3>
+                <h3 className="section-title">
+                  Education <FontAwesomeIcon icon={faGraduationCap} />
+                </h3>
                 <div>
                   <p className="date">February 2025 - May 2025</p>
                   <h4>MERN Software Engineering Program</h4>
@@ -101,36 +109,79 @@ export default function About() {
 
             {selectedSection === "skills" && (
               <div className="skills-container">
-                <h3 className="section-title">Toolkit <FontAwesomeIcon icon={faScrewdriverWrench}/></h3>
+                <h3 className="section-title">
+                  Toolkit <FontAwesomeIcon icon={faScrewdriverWrench} />
+                </h3>
                 <div className="skills">
-                  <div className="skill"><img src={html} alt="" width={60} height={60}/><div className="tooltip">HTML</div></div>
-                  <div className="skill"><img src={css} alt="" width={60} height={60}/><div className="tooltip">CSS</div></div>
-                  <div className="skill"><img src={bootstrap} alt="" width={60} height={60}/><div className="tooltip">Bootstrap</div></div>
-                  <div className="skill"><img src={tailwind} alt="" width={60} height={60}/><div className="tooltip">Tailwind CSS</div></div>
-                  <div className="skill"><img src={js} alt="" width={60} height={60}/><div className="tooltip">JavaScript</div></div>
-                  <div className="skill"><img src={ts} alt="" width={60} height={60}/><div className="tooltip">TypeScript</div></div>
-                  <div className="skill"><img src={react} alt="" width={60} height={60}/><div className="tooltip">React</div></div>
-                  <div className="skill"><img src={reactrouters} alt="" width={60} height={60}/><div className="tooltip">React Routers</div></div>
-                  <div className="skill"><img src={node} alt="" width={60} height={60}/><div className="tooltip">Node</div></div>
-                  <div className="skill"><img src={express} alt="" width={60} height={60}/><div className="tooltip">Express</div></div>
-                  <div className="skill"><img src={git} alt="" width={60} height={60}/><div className="tooltip">Git</div></div>
-                  <div className="skill"><img src={github} alt="" width={60} height={60}/><div className="tooltip">Github</div></div>
+                  <div className="skill">
+                    <img src={html} alt="" width={60} height={60} />
+                    <div className="tooltip">HTML</div>
+                  </div>
+                  <div className="skill">
+                    <img src={css} alt="" width={60} height={60} />
+                    <div className="tooltip">CSS</div>
+                  </div>
+                  <div className="skill">
+                    <img src={bootstrap} alt="" width={60} height={60} />
+                    <div className="tooltip">Bootstrap</div>
+                  </div>
+                  <div className="skill">
+                    <img src={tailwind} alt="" width={60} height={60} />
+                    <div className="tooltip">Tailwind CSS</div>
+                  </div>
+                  <div className="skill">
+                    <img src={js} alt="" width={60} height={60} />
+                    <div className="tooltip">JavaScript</div>
+                  </div>
+                  <div className="skill">
+                    <img src={ts} alt="" width={60} height={60} />
+                    <div className="tooltip">TypeScript</div>
+                  </div>
+                  <div className="skill">
+                    <img src={react} alt="" width={60} height={60} />
+                    <div className="tooltip">React</div>
+                  </div>
+                  <div className="skill">
+                    <img src={reactrouters} alt="" width={60} height={60} />
+                    <div className="tooltip">React Routers</div>
+                  </div>
+                  <div className="skill">
+                    <img src={node} alt="" width={60} height={60} />
+                    <div className="tooltip">Node</div>
+                  </div>
+                  <div className="skill">
+                    <img src={express} alt="" width={60} height={60} />
+                    <div className="tooltip">Express</div>
+                  </div>
+                  <div className="skill">
+                    <img src={git} alt="" width={60} height={60} />
+                    <div className="tooltip">Git</div>
+                  </div>
+                  <div className="skill">
+                    <img src={github} alt="" width={60} height={60} />
+                    <div className="tooltip">Github</div>
+                  </div>
                 </div>
               </div>
             )}
 
             {selectedSection === "experience" && (
               <div className="experience-container">
-                <h3 className="section-title">Experience <FontAwesomeIcon icon={faBriefcase}/></h3>
+                <h3 className="section-title">
+                  Experience <FontAwesomeIcon icon={faBriefcase} />
+                </h3>
                 <div>
                   <p className="date">September 2024 - Present</p>
                   <p className="location">Remote</p>
                   <h4>Freelance Web Developer</h4>
-                  <p className="job-description">Developed custom websites for clients accross various industries. Skilled in front-end and back-end development.
-                    Developed responsive, secure, and SEO friendly solutions. Experiencied in API integration, cloud deployment and 
-                    client collaboration from concept to launch.
+                  <p className="job-description">
+                    Developed custom websites for clients accross various
+                    industries. Skilled in front-end and back-end development.
+                    Developed responsive, secure, and SEO friendly solutions.
+                    Experiencied in API integration, cloud deployment and client
+                    collaboration from concept to launch.
                   </p>
-                </div>                
+                </div>
               </div>
             )}
           </div>
