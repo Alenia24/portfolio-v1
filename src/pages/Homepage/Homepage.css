@@ -5,6 +5,13 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+}
+
 .title-container {
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +32,7 @@
 }
 
 .title-heading p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .highlight {
@@ -111,7 +118,6 @@
 }
 
 .homepage-projects-container, .homepage-about-container {
-  display: block;
   margin: 60px auto;
   max-width: 1000px;
 }
@@ -159,18 +165,28 @@
   50% { border-color: #bb86fc; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
+  .homepage-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+  }
+
   .title-container{
-    text-align: center;
-    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 10px auto;
   }
 
   .title-heading {
+    text-align: center;
     order: 2;
   }
 
   .title {
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .title-image {
@@ -179,10 +195,86 @@
   }
 
   .homepage-projects-container, .homepage-about-container {
-    margin: 50px 30px;
+    margin: 50px 10px;
   }
 
   .homepage-projects {
     flex-direction: column;
   }
 }
+
+@media (min-width: 641px) and (max-width: 767px) {
+  .title-container{
+    margin: 30px;
+  }
+
+  .title-heading {
+    order: 1;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .title-image {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .title-container{
+    flex-wrap: nowrap;
+    margin: 30px auto;
+  }
+
+  .title-heading {
+    order: 1;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .title-image {
+    order: 2;
+  }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1100px) {
+  .title-container{
+    justify-content: space-between;
+    margin: 30px auto;
+  }
+
+  .title-heading {
+    order: 1;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .title-image {
+    order: 2;
+    max-width: 250px;
+  }
+}
+
+@media screen and (min-width: 660px) and (max-width: 1190px) and (orientation: landscape) {
+  .title-container {
+    flex-wrap: nowrap;
+    margin: 0;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .title-image {
+    max-width: 180px;
+    height: 50%;
+  }
+}
+

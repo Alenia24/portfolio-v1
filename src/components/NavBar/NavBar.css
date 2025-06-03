@@ -36,7 +36,7 @@
     background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2030%2030'%3E%3Cpath%20stroke='%23E0E0E0'%20stroke-linecap='round'%20stroke-miterlimit='10'%20stroke-width='2'%20d='M4%207h22M4%2015h22M4%2023h22'/%3E%3C/svg%3E") !important;
 }
 
-@media(max-width: 768px) {
+@media(min-width: 200px) and (max-width: 500px){
    .nav-links a {
     text-align: center;
     color: black !important;
