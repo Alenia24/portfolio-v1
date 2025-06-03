@@ -9,6 +9,7 @@ import guessing from "../../assets/projectimages/guessing.png";
 import dog from "../../assets/projectimages/dog.png";
 import clock from "../../assets/projectimages/clock.png";
 import weather from "../../assets/projectimages/weather.png";
+import portfolio from "../../assets/projectimages/portfolio.png";
 import "./Projects.css";
 
 export default function Projects() {
@@ -55,6 +56,16 @@ export default function Projects() {
           />
 
           <ProjectItem
+            title="Portfolio"
+            image={portfolio}
+            description="Personal portfolio website, designed and devloped to present my projects,
+            skills, and experience. "
+            liveLink="https://aleniaallen.onrender.com/"
+            githubLink="https://github.com/Alenia24/portfolio-v1"
+            projectTools={["React", "CSS", "JavaScript", "Bootstrap", "React Router", "Emailjs"]}
+          />
+
+          <ProjectItem
             title="Weather Application"
             image={weather}
             description="A responsive weather application that allows users to search by city and view current
@@ -90,7 +101,7 @@ export default function Projects() {
             description="A real time world clock app that displays the current time for seven major cities,
             updating dynamially using an API for accurate, live time information.. "
             liveLink="https://worldclockdesign.netlify.app/"
-            githubLink="https://worldclockdesign.netlify.app/"
+            githubLink="https://github.com/Alenia24/world-clock-design"
             projectTools={["Html", "CSS", "JavaScript", "API"]}
           />
         </div>
