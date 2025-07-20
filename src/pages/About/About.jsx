@@ -9,7 +9,7 @@ import { faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 import git from "../../assets/brandLogos/git.svg";
-import html from "../../assets/brandLogos/html.png"
+import html from "../../assets/brandLogos/html.png";
 import css from "../../assets/brandLogos/css.png";
 import js from "../../assets/brandLogos/js.png";
 import ts from "../../assets/brandLogos/typescript.png";
@@ -27,8 +27,8 @@ export default function About() {
   const [selectedSection, setSelectedSection] = useState("education");
 
   useEffect(() => {
-    document.title = "About | Alenia Allen"
-  })
+    document.title = "About | Alenia Allen";
+  });
 
   return (
     <div className="aboutpage">
@@ -55,11 +55,17 @@ export default function About() {
           </p>
           <blockquote>
             <q className="quote">
-              People will forget what you said, people will forget what you did,
-              but people will never forget how you made them feed.
+              First, solve the problem. Then, write the code.
             </q>
-            <cite className="author">- Maya Angelou</cite>
+            <cite className="author">- John Johnson</cite>
           </blockquote>
+
+          {/* <p>
+            This quote reminds me that good software isn't just about writing
+            code, its about deeply undestanding the problem, designing
+            thoughtful solutions, and building with purpose. It reflects how I
+            approach challenges in both collaborative and independent settings.
+          </p> */}
         </div>
 
         <div className="skill-section">
